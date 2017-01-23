@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "carrier": "SpaceX",
+    "carrier_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/2000px-SpaceX-Logo.svg.png",
+    "departure": "2020-12-12T14:00:00Z",
+    "arrival": "2021-03-02T20:30:00Z",
+    "from": "Cape Canaveral",
+    "to": "Mars"
+  },
+  {
+    "id": 2,
+    "carrier": "Virgin Galactic",
+    "carrier_logo": "https://upload.wikimedia.org/wikipedia/en/1/1d/Virgin_Galactic.png",
+    "departure": "2022-12-12T10:00:00Z",
+    "arrival": "2023-03-02T22:30:00Z",
+    "from": "London",
+    "to": "Mars"
+  },
+  {
+    "id": 3,
+    "carrier": "Ryanair",
+    "carrier_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Ryanair_logo_2013(1).svg/1280px-Ryanair_logo_2013(1).svg.png",
+    "departure": "2018-12-12T14:00:00Z",
+    "arrival": "2021-03-02T20:30:00Z",
+    "from": "Dublin",
+    "to": "Mars"
+  },
+  {
+    "id": 4,
+    "carrier": "Ryanair",
+    "carrier_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Ryanair_logo_2013(1).svg/1280px-Ryanair_logo_2013(1).svg.png",
+    "departure": "2024-12-12T14:00:00Z",
+    "arrival": "2030-03-02T20:30:00Z",
+    "from": "Dublin",
+    "to": "Mars"
+  },
+  {
+    "id": 5,
+    "carrier": "Niki",
+    "carrier_logo": "http://www.flyniki.com/site/affiliate/flyniki/presse/bilder/NIKI_4c_Spirit_HGw_big.jpg",
+    "departure": "2020-12-12T14:00:00Z",
+    "arrival": "2021-03-02T20:30:00Z",
+    "from": "Wien",
+    "to": "Mars"
+  }
+]

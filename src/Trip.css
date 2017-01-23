@@ -1,0 +1,29 @@
+.Trip {
+  margin: 1rem 0;
+  border: 1px solid #2c3e50;
+  border-radius: 3px;
+  background-color: #ecf0f1;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.Trip .logo {
+  align-self: center;
+  max-height: 150px;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+.Trip .carrier {
+  font-size: 1.1em;
+}
+
+.Trip .times {
+  font-size: 1.3em;
+}
+
+.Trip .origin-destination {
+  font-size: 1.2em;
+}
