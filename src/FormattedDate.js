@@ -13,7 +13,7 @@ class FormattedDate extends Component {
   }
 }
 
-Date.propTypes = {
+FormattedDate.propTypes = {
   isoString: PropTypes.string.isRequired,
 }
 
