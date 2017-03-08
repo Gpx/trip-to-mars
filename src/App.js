@@ -35,6 +35,13 @@ class App extends Component {
       : trips.filter(trip => trip.carrier === selectedCarrier)
   }
 
+  getCarriers (trips) {
+    return trips.map(trip => trip.carrier)
+      .reduce((carriers, carrier) => (
+        carriers.includes(carrier) ? carriers : [carrier, ...carriers]
+      ), [])
+  }
+
   handleCarrierChange (selectedCarrier) {
     this.setState({ selectedCarrier })
   }
@@ -42,6 +49,7 @@ class App extends Component {
   render() {
     const { trips, tripsLoaded, selectedCarrier } = this.state
     const visibleTrips = this.getSelectedTrips(trips, selectedCarrier)
+    const carriers = this.getCarriers(trips)
 
     if (!tripsLoaded) {
       return null
@@ -52,7 +60,7 @@ class App extends Component {
         <h1>Trip to Mars</h1>
 
         <CarrierSelector
-          trips={trips}
+          carriers={carriers}
           onChange={this.handleCarrierChange}
         />
 

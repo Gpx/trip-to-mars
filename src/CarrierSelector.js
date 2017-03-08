@@ -7,13 +7,8 @@ class CarrierSelector extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  getCarriers (trips) {
-    return trips
-      .map(trip => trip.carrier)
-      .reduce((carriers, carrier) => (
-        carriers.includes(carrier) ? carriers : [carrier, ...carriers]
-      ), [])
-      .sort()
+  getSortedCarriers (carriers) {
+    return carriers.concat().sort()
   }
 
   handleChange (evt) {
@@ -22,14 +17,14 @@ class CarrierSelector extends Component {
   }
 
   render () {
-    const { trips } = this.props
-    const carriers = this.getCarriers(trips)
+    const { carriers } = this.props
+    const sortedCarriers = this.getSortedCarriers(carriers)
 
     return (
       <select onChange={this.handleChange}>
         <option value="">All</option>
         {
-          carriers.map(carrier =>
+          sortedCarriers.map(carrier =>
             <option
               key={carrier}
               value={carrier}
@@ -42,7 +37,7 @@ class CarrierSelector extends Component {
 }
 
 CarrierSelector.propTypes = {
-  trips: PropTypes.array.isRequired,
+  carriers: PropTypes.arrayOf(PropTypes.string).isRequired,
   onChange: PropTypes.func.isRequired,
 }
 
